@@ -7,7 +7,7 @@ class App extends React.Component{
             generated: 0,
             fastGenerateMode: false,
 
-            fastRandomSecretCode: 'ppp'
+            fastRandomSecretCode: 'rrf'
         }
 
         this.handleChange = this.handleChange.bind(this)
@@ -15,7 +15,6 @@ class App extends React.Component{
     }
 
     handleChange(event){
-
         this.setState({
             color: event.target.value,
         })
@@ -38,7 +37,7 @@ class App extends React.Component{
         // This will run when anything changes in the component (such as text)
         $(body).css('background', this.state.color)
 
-        if(this.state.color == 'random'){
+        if(this.state.color == 'rrr'){
 
             this.setState((prevState) => {
                 return{
