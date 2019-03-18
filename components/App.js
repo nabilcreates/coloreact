@@ -64,9 +64,11 @@ class App extends React.Component{
             <div>
                 <Header generated={this.state.generated} fastGenerateMode={this.state.fastGenerateMode} currentColor={this.state.color} />
 
-                <input type='text' value={this.state.color} onChange={this.handleChange}></input>
+                <div className='formandbutton'>
+                    <input type='text' value={this.state.color} onChange={this.handleChange}></input>
 
-                <button onClick={this.blankColor} >Clear</button>
+                    <button onClick={this.blankColor} >Clear</button>
+                </div>
             </div>
         )
     }
