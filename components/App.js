@@ -11,6 +11,7 @@ class App extends React.Component{
         }
 
         this.handleChange = this.handleChange.bind(this)
+        this.blankColor = this.blankColor.bind(this)
     }
 
     handleChange(event){
@@ -24,7 +25,13 @@ class App extends React.Component{
     generateRandomColor(){
         return `rgb(${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)}, ${Math.round(Math.random() * 255)})`
     }
-    
+
+
+    blankColor(){
+        this.setState({
+            color: '',
+        })
+    }
     
     render(){
 
@@ -56,7 +63,10 @@ class App extends React.Component{
         return(
             <div>
                 <Header generated={this.state.generated} fastGenerateMode={this.state.fastGenerateMode} currentColor={this.state.color} />
+
                 <input type='text' value={this.state.color} onChange={this.handleChange}></input>
+
+                <button onClick={this.blankColor} >Clear</button>
             </div>
         )
     }
