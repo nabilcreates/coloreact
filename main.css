@@ -26,6 +26,7 @@ body{
 }
 
 input{
+    border-radius: 0;
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -38,6 +39,7 @@ input{
 
 
 button{
+    border-radius: 0;
     padding: 10px 0;
     width: 100%;
     background: rgb(228, 43, 43);
