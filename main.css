@@ -35,3 +35,12 @@ input{
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
 }
+
+
+button{
+    padding: 10px 0;
+    width: 100%;
+    background: rgb(230, 53, 53);
+    color: whitesmoke;
+    border: 0;
+}
